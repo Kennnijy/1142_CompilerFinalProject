@@ -6,8 +6,8 @@ Compiler sample
 先打開Ubuntu terminal(切換到想要的資料夾裡面)
 
 接著裝以下這兩個自動安裝與執行腳本擋(*.sh)：  
-wget https://raw.githubusercontent.com/Kennnijy/1142Compiler_FinalPresentation-Compiler-sample/refs/heads/main/setup_compiler.sh  
-wget https://raw.githubusercontent.com/Kennnijy/1142Compiler_FinalPresentation-Compiler-sample/refs/heads/main/run_pipeline.sh
+wget https://raw.githubusercontent.com/Kennnijy/1142_CompilerFinalProject/refs/heads/main/setup_compiler.sh
+wget https://raw.githubusercontent.com/Kennnijy/1142_CompilerFinalProject/refs/heads/main/run_pipeline.sh
 
 調整權限：  
 chmod +x setup_compiler.sh  
