@@ -57,16 +57,8 @@ cc lex.yy.c y.tab.c -o Compile
   
   
 編譯.c檔(可自行替換 1~8 不同數字，總共有八個 C 檔)：	
+  1
 ./Compile < sample1.c
-
-
-
-
-
-
-
-
-
 
 
 
