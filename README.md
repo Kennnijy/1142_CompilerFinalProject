@@ -2,7 +2,7 @@
 
 先打開Ubuntu terminal(切換到想要的資料夾裡面)
 
-# 使用 flex 和 bison 實作編譯器的 「詞法分析」和「語法分析」(手動輸入
+# 使用 flex 和 bison 實作編譯器的 「詞法分析」和「語法分析」(手動輸入)
 
 安裝 lex(flex) 和 yacc(bison)：  
 sudo apt-get install flex  
@@ -37,7 +37,7 @@ cc lex.yy.c y.tab.c -o Compile
 
 
 
-# 使用 gcc 完成組合語言 (手動輸入
+# 使用 gcc 完成組合語言 (手動輸入)
 
 下載範例C檔：  
 git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
@@ -63,11 +63,49 @@ gcc sample5.c -o sample5_gcc_exe
 
 # 使用 LLVM+Clang 完成完整的編譯過程 (手動輸入
 
+## 使用 LLVM+Clang 完成完整的編譯過程 (手動輸入)
+
+下載範例 C 檔：  
+git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
+
+進入資料夾：  
+cd 1142_CompilerFinalProject/
+
+安裝 Clang 與 LLVM 工具鏈：  
+sudo apt-get install clang llvm -y
+
+檢查成功安裝的版本資訊：  
+clang --version
+llc --version
+
+使用 Clang 前端將 C 碼轉為 LLVM IR 中間碼 (.ll)：  
+clang -S -emit-llvm sample5.c
+
+使用 opt 進行中端最佳化（包含 globalopt、loop-simplify 與 mem2reg 記憶體優化）：
+opt -S -passes='globalopt,loop-simplify,mem2reg' sample5.ll -o sample5_opt.ll
+
+使用 llc 後端將最佳化後的中間碼轉為 x86 組合語言 (.s)：  
+llc sample5_opt.ll -o sample5.s
+
+使用 GNU As (as) 組譯器將組合語言組譯成目的檔 (.o)：  
+as sample5.s -o sample5.o
+
+手動使用 ld 連結器串起 C 語言標準庫，包裝出最終執行檔 sample5_ex：  
+ld -o sample5_ex -dynamic-linker /lib64/ld-linux-x86-64.so.2 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o sample5.o -lc /usr/lib/x86_64-linux-gnu/crtn.o
+
+執行：  
+./sample5_ex
 
 
 
 
-# 使用 LLVM+Clang 完成完整的編譯過程 (用腳本執行
+
+
+
+
+
+
+# 使用 LLVM+Clang 完成完整的編譯過程 (用腳本執行)
 
 接著裝以下這兩個自動安裝與執行腳本擋(*.sh)：  
 wget https://raw.githubusercontent.com/Kennnijy/1142_CompilerFinalProject/refs/heads/main/setup_compiler.sh  
