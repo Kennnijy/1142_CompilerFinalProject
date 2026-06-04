@@ -6,7 +6,7 @@ sudo apt-get install bison
   
   
 下載範例C檔：  
-git clone https://github.com/gjlmotea/Compiler-sample.git
+git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
   
   
 進入資料夾：  
@@ -36,7 +36,7 @@ cc lex.yy.c y.tab.c -o Compile
 # 使用 gcc 完成組合語言
 
 下載範例C檔：  
-git clone https://github.com/gjlmotea/Compiler-sample.git
+git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
 
 進入資料夾：  
 cd Compiler-sample/
