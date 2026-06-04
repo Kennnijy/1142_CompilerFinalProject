@@ -37,13 +37,12 @@ git clone https://github.com/gjlmotea/Compiler-sample.git
 cd Compiler-sample/
 
 
-用 Lex 工具編譯 lex.l ⮕ 產生 lex.y.c
-用 Yacc 工具編譯 yacc.y ⮕ 產生 y.tab.c
-
-：  
+用 Lex 工具編譯 lex.l ⮕ 產生 lex.y.c：  
 lex lex.l  
+
+用 Yacc 工具編譯 yacc.y  ⮕ 產生 y.tab.c：  
 ~yacc yacc.y~  
-yacc -d yacc.y
+yacc -d yacc.y( yacc yacc.y 會有錯誤，需要用 yacc -d yacc.y 指令對yacc.y產生標頭檔)  
 
 cc lex.yy.c y.tab.c -o Compile
 
