@@ -22,4 +22,41 @@ sed -i 's/\r$//' run_pipeline.sh
 ./run_pipeline.sh
 
 
+cd ccd
+
 # Compiler sample(手動輸入
+
+下載範例C檔：
+sudo apt-get install flex
+sudo apt-get install bison
+
+git clone https://github.com/gjlmotea/Compiler-sample.git
+
+cd Compiler-sample/
+
+lex lex.l
+~yacc yacc.y~
+yacc -d yacc.y
+
+cc lex.yy.c y.tab.c -o Compile
+
+./Compile < sample1.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
