@@ -26,8 +26,8 @@ cd ccd
 
 # Compiler sample(手動輸入
 
-下載範例C檔：
-sudo apt-get install flex
+下載範例C檔：  
+sudo apt-get install flex  
 sudo apt-get install bison
 
 git clone https://github.com/gjlmotea/Compiler-sample.git
