@@ -35,7 +35,7 @@ git clone https://github.com/gjlmotea/Compiler-sample.git
 cd Compiler-sample/
 
 lex lex.l
-~yacc yacc.y~
+~yacc yacc.y~  
 yacc -d yacc.y
 
 cc lex.yy.c y.tab.c -o Compile
