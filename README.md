@@ -37,8 +37,8 @@ git clone https://github.com/gjlmotea/Compiler-sample.git
 cd Compiler-sample/
 
 
-對 lex.l 使用 Lex 工具編譯$\rightarrow$產生 lex.y.c
-對 yacc.y 使用 Yacc 工具編譯$\rightarrow$產生 y.tab.c
+用 Lex 工具編譯 lex.l ⮕ 產生 lex.y.c
+用 Yacc 工具編譯 yacc.y ⮕ 產生 y.tab.c
 
 ：  
 lex lex.l  
