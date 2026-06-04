@@ -10,7 +10,7 @@ git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
 
   
 進入資料夾：  
-cd Compiler-sample/
+cd 1142_CompilerFinalProject
   
   
 用 Lex 工具編譯 lex.l ⮕ 產生 lex.y.c：  
@@ -39,7 +39,7 @@ cc lex.yy.c y.tab.c -o Compile
 git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
 
 進入資料夾：  
-cd Compiler-sample/
+cd 1142_CompilerFinalProject
 
 -S 代表只編譯到組合語言，-masm=intel 代表使用 Intel 語法風格：  
 gcc -S -masm=intel sample3.c -o sample3_gcc.s
