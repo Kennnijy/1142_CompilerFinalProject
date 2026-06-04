@@ -85,8 +85,6 @@ sed -i 's/\r$//' setup_compiler.sh
 sed -i 's/\r$//' run_pipeline.sh
   
   
-執行(setup_compiler.sh 是環境建置；run_pipeline.sh是編譯)：  
+執行(setup_compiler.sh 是環境&編譯器建置；run_pipeline.sh是編譯過程)：  
 ./setup_compiler.sh  
 ./run_pipeline.sh
-
-
