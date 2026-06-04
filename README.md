@@ -22,24 +22,32 @@ sed -i 's/\r$//' run_pipeline.sh
 ./run_pipeline.sh
 
 
-cd ccd
+
 
 # Compiler sample(手動輸入
 
-下載範例C檔：  
+安裝 lex(flex) 和 yacc(bison)：  
 sudo apt-get install flex  
 sudo apt-get install bison
 
+下載範例C檔：  
 git clone https://github.com/gjlmotea/Compiler-sample.git
 
+進入資料夾：  
 cd Compiler-sample/
 
+
+對 lex.l 使用 Lex 工具編譯$\rightarrow$產生 lex.y.c
+對 yacc.y 使用 Yacc 工具編譯$\rightarrow$產生 y.tab.c
+
+：  
 lex lex.l  
 ~yacc yacc.y~  
 yacc -d yacc.y
 
 cc lex.yy.c y.tab.c -o Compile
 
+編譯(可自行替換
 ./Compile < sample1.c
 
 
