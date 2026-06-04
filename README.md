@@ -79,7 +79,7 @@ llc --version
 使用 Clang 前端將 C 碼轉為 LLVM IR 中間碼 (.ll)：  
 clang -S -emit-llvm sample5.c
 
-使用 opt 進行中端最佳化（包含 globalopt、loop-simplify 與 mem2reg 記憶體優化）：
+使用 opt 進行中端最佳化（包含 globalopt、loop-simplify 與 mem2reg 記憶體優化）：  
 opt -S -passes='globalopt,loop-simplify,mem2reg' sample5.ll -o sample5_opt.ll
 
 使用 llc 後端將最佳化後的中間碼轉為 x86 組合語言 (.s)：  
