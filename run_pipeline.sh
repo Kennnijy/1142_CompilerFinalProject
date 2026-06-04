@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 切換到專案資料夾
-cd ~/final/1142Compiler_FinalPresentation-Compiler-sample/
+cd ~/final/1142_CompilerFinalProject/
 
 echo "=========================================="
-echo " 歡迎使用第 13 組編譯器專題流水線"
+echo " 第  組編譯器期末專題"
 echo "=========================================="
 
 # 1. 讓使用者選擇 sample 1 ~ sample 8
