@@ -44,6 +44,8 @@ lex lex.l
 ~yacc yacc.y~ (yacc yacc.y 會有錯誤)  
 yacc -d yacc.y (所以需要用 yacc -d yacc.y 指令對yacc.y產生標頭檔)  
 
+
+編譯 lex.yy.c 和 y.tab.c，產生檔名為 Complie 的可執行檔：  
 cc lex.yy.c y.tab.c -o Compile
 
 編譯(可自行替換
