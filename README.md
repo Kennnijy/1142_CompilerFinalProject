@@ -61,9 +61,7 @@ gcc sample5.c -o sample5_gcc_exe
 
 
 
-# 使用 LLVM+Clang 完成完整的編譯過程 (手動輸入
-
-## 使用 LLVM+Clang 完成完整的編譯過程 (手動輸入)
+# 使用 LLVM+Clang 完成完整的編譯過程 (手動輸入)
 
 下載範例 C 檔：  
 git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
