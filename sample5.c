@@ -8,6 +8,3 @@ int main(void)
    x=y+-z;
    printf("%d\n", x);
 }
-
-
-
