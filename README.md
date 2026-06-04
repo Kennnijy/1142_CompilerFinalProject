@@ -33,7 +33,46 @@ cc lex.yy.c y.tab.c -o Compile
 
 
 
-# Compiler sample(腳本執行
+# 使用 gcc 完成組合語言
+
+下載範例C檔：  
+git clone https://github.com/gjlmotea/Compiler-sample.git
+
+進入資料夾：  
+cd Compiler-sample/
+
+-S 代表只編譯到組合語言，-masm=intel 代表使用 Intel 語法風格：  
+gcc -S -masm=intel sample3.c -o sample3_gcc.s
+
+查看產生出來的組合語言程式碼
+cat sample3_gcc.s
+
+產生執行檔 sample3_gcc_exe：  
+gcc sample3.c -o sample3_gcc_exe
+
+執行：  
+./sample3_gcc_exe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 用腳本跑LLVM+Clang，完成完整的編譯過程
 
 請在Ubuntu環境下執行
 
@@ -66,3 +105,35 @@ sed -i 's/\r$//' run_pipeline.sh
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+下載範例C檔：  
+git clone https://github.com/gjlmotea/Compiler-sample.git
+
+進入資料夾：  
+cd Compiler-sample/
+
+先用工具產生 C 語言原始檔
+lex lex.l
+yacc -d yacc.y
+
+使用 gcc 將它們編譯並打包成名為 GCC_Compile 的執行檔
+gcc lex.yy.c y.tab.c -o GCC_Compile
+
+編譯.c檔(可自行替換 1~8 不同數字，總共有八個 C 檔)：  
+./GCC_Compile < sample1.c
