@@ -56,7 +56,7 @@ yacc -d yacc.y (所以需要用 yacc -d yacc.y 指令對yacc.y產生標頭檔)
 cc lex.yy.c y.tab.c -o Compile
   
   
-編譯(可自行替換
+編譯.c檔(可自行替換 1~8 不同數字，總共有八個 C 檔)：	
 ./Compile < sample1.c
 
 
