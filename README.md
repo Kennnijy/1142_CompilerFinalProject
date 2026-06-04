@@ -41,8 +41,8 @@ cd Compiler-sample/
 lex lex.l  
 
 用 Yacc 工具編譯 yacc.y  ⮕ 產生 y.tab.c：  
-~yacc yacc.y~  
-yacc -d yacc.y( yacc yacc.y 會有錯誤，需要用 yacc -d yacc.y 指令對yacc.y產生標頭檔)  
+~yacc yacc.y~ (yacc yacc.y 會有錯誤)  
+yacc -d yacc.y (所以需要用 yacc -d yacc.y 指令對yacc.y產生標頭檔)  
 
 cc lex.yy.c y.tab.c -o Compile
 
