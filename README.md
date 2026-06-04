@@ -60,7 +60,7 @@ cc lex.yy.c y.tab.c -o Compile
 ./Compile < sample1.c
   
   
-  11:
+  
   
 
 
