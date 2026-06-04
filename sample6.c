@@ -5,4 +5,3 @@ int main(void)
    int z=3;
    x=y+z;
 }
-
