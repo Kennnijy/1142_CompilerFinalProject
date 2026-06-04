@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 切換到專案資料夾
-cd ~/final/1142_CompilerFinalProject/
+cd ~/1142CompilerFinalProject/final/1142_CompilerFinalProject/
 
 echo "=========================================="
 echo " 第  組編譯器期末專題"
