@@ -1,4 +1,4 @@
-# Compiler sample
+# Compiler sample(腳本執行
 
 請在Ubuntu環境下執行
 
@@ -22,3 +22,4 @@ sed -i 's/\r$//' run_pipeline.sh
 ./run_pipeline.sh
 
 
+# Compiler sample(手動輸入
