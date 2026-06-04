@@ -42,31 +42,16 @@ git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
 cd 1142_CompilerFinalProject
 
 -S 代表只編譯到組合語言，-masm=intel 代表使用 Intel 語法風格(可自行替換 1~8 不同數字，總共有八個 C 檔)：  
-gcc -S -masm=intel sample1.c -o sample1_gcc.s
+gcc -S -masm=intel sample5.c -o sample5_gcc.s
 
 查看產生出來的組合語言程式碼
-cat sample1_gcc.s
+cat sample5_gcc.s
 
-產生執行檔 sample1_gcc_exe：  
-gcc sample1.c -o sample1_gcc_exe
+產生執行檔 sample5_gcc_exe：  
+gcc sample5.c -o sample5_gcc_exe
 
 執行：  
-./sample3_gcc_exe
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+./sample5_gcc_exe
 
 
 
