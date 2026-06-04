@@ -1,4 +1,8 @@
-# 用flex 和 bison 實作編譯器的 「詞法分析」和「語法分析」
+請在Ubuntu環境下執行
+
+先打開Ubuntu terminal(切換到想要的資料夾裡面)
+
+# 使用 flex 和 bison 實作編譯器的 「詞法分析」和「語法分析」
 
 安裝 lex(flex) 和 yacc(bison)：  
 sudo apt-get install flex  
@@ -57,13 +61,14 @@ gcc sample5.c -o sample5_gcc_exe
 
 
 
-# 用腳本跑LLVM+Clang，完成完整的編譯過程
+# 使用 LLVM+Clang 完成完整的編譯過程
 
-請在Ubuntu環境下執行
 
-先打開Ubuntu terminal(切換到想要的資料夾裡面)
-  
-  
+
+
+
+# 使用 LLVM+Clang 完成完整的編譯過程 (用腳本執行
+
 接著裝以下這兩個自動安裝與執行腳本擋(*.sh)：  
 wget https://raw.githubusercontent.com/Kennnijy/1142_CompilerFinalProject/refs/heads/main/setup_compiler.sh  
 wget https://raw.githubusercontent.com/Kennnijy/1142_CompilerFinalProject/refs/heads/main/run_pipeline.sh
