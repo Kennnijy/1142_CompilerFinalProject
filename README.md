@@ -2,7 +2,7 @@
 
 先打開Ubuntu terminal(切換到想要的資料夾裡面)
 
-# 使用 flex 和 bison 實作編譯器的 「詞法分析」和「語法分析」
+# 使用 flex 和 bison 實作編譯器的 「詞法分析」和「語法分析」(手動輸入
 
 安裝 lex(flex) 和 yacc(bison)：  
 sudo apt-get install flex  
@@ -37,7 +37,7 @@ cc lex.yy.c y.tab.c -o Compile
 
 
 
-# 使用 gcc 完成組合語言
+# 使用 gcc 完成組合語言 (手動輸入
 
 下載範例C檔：  
 git clone https://github.com/Kennnijy/1142_CompilerFinalProject.git
@@ -61,7 +61,7 @@ gcc sample5.c -o sample5_gcc_exe
 
 
 
-# 使用 LLVM+Clang 完成完整的編譯過程
+# 使用 LLVM+Clang 完成完整的編譯過程 (手動輸入
 
 
 
